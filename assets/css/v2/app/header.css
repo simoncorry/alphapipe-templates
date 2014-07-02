@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+#header {
+    z-index:999999;
+    position:fixed;
+    top:0;
+    background:rgb(82,111,193);
+    width:100%;
+    height:50px;
+    border-bottom:1px solid rgb(62,91,173);
+}
+
+#header_wrapper {
+    width:100%;
+    max-width:1200px;
+    height:100%;
+    margin:0 auto;
+    padding:0 40px;
+}
+
+#header_logo {
+    display:block;
+    float:left;
+    background:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MHB4IiBoZWlnaHQ9IjEycHgiPjxnPjxnPjxwYXRoIGZpbGw9IiM0ODY1QjciIGQ9Ik05LjUsMWgtNkMyLjQsMSwxLDEuOSwxLDN2MHY4aDJWN2g2djRoMlYzdjBDMTEsMS45LDEwLjYsMSw5LjUsMXogTTksNUgzVjNoNlY1eiIvPjxwYXRoIGZpbGw9IiM0ODY1QjciIGQ9Ik01My41LDFoLTZDNDYuNCwxLDQ1LDEuOSw0NSwzdjB2OGgyVjNoNnYxaDJWM3YwQzU1LDEuOSw1NC42LDEsNTMuNSwxeiIvPjxwb2x5Z29uIGZpbGw9IiM0ODY1QjciIHBvaW50cz0iNTUsMTMgNTMsMTEgNTMsOCA1NSw4Ii8+PHBhdGggZmlsbD0iIzQ4NjVCNyIgZD0iTTMxLjUsMUwzMS41LDFoLTZIMjN2MTBoMlY3aDYuNWgwQzMyLjYsNywzMyw2LjEsMzMsNVYzQzMzLDEuOSwzMi42LDEsMzEuNSwxeiBNMzEsNWgtNlYzaDZWNXoiLz48cGF0aCBmaWxsPSIjNDg2NUI3IiBkPSJNNzguNSwxTDc4LjUsMWgtNkg3MHYxMGgyVjdoNi41aDBDNzkuNiw3LDgwLDYuMSw4MCw1VjNDODAsMS45LDc5LjYsMSw3OC41LDF6IE03OCw1aC02VjNoNlY1eiIvPjxwYXRoIGZpbGw9IiM0ODY1QjciIGQ9Ik02NC41LDFMNjQuNSwxaC02SDU2djRoLTcuNWwyLDJINTZ2NGgyVjdoNi41aDBDNjUuNiw3LDY2LDYuMSw2Niw1VjNDNjYsMS45LDY1LjYsMSw2NC41LDF6IE02NCw1aC02VjNoNlY1eiIvPjxwb2x5Z29uIGZpbGw9IiM0ODY1QjciIHBvaW50cz0iNDIsMSA0Miw1IDM2LDUgMzYsMSAzNCwxIDM0LDExIDM2LDExIDM2LDcgNDIsNyA0MiwxMSA0NCwxMSA0NCwxIi8+PHJlY3QgeD0iNjciIHk9IjEiIGZpbGw9IiM0ODY1QjciIHdpZHRoPSIyIiBoZWlnaHQ9IjEwIi8+PHBvbHlnb24gZmlsbD0iIzQ4NjVCNyIgcG9pbnRzPSIxNCw5IDE0LDEgMTIsMSAxMiwxMSAxNC41LDExIDIyLDExIDIyLDkiLz48cG9seWdvbiBmaWxsPSIjNDg2NUI3IiBwb2ludHM9IjkxLDMgOTEsMSA4My41LDEgODEsMSA4MSwxMSA4My41LDExIDkxLDExIDkxLDkgODMsOSA4Myw3IDg5LDcgODksNSA4Myw1IDgzLDMiLz48L2c+PGc+PGc+PHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTguNSwwaC02QzEuNCwwLDAsMC45LDAsMnYwdjhoMlY2aDZ2NGgyVjJ2MEMxMCwwLjksOS42LDAsOC41LDB6IE04LDRIMlYyaDZWNHoiLz48cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNTIuNSwwaC02QzQ1LjQsMCw0NCwwLjksNDQsMnYwdjhoMlYyaDZ2MWgyVjJ2MEM1NCwwLjksNTMuNiwwLDUyLjUsMHoiLz48cG9seWdvbiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjU0LDEyIDUyLDEwIDUyLDcgNTQsNyIvPjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0zMC41LDBMMzAuNSwwaC02SDIydjEwaDJWNmg2LjVoMEMzMS42LDYsMzIsNS4xLDMyLDRWMkMzMiwwLjksMzEuNiwwLDMwLjUsMHogTTMwLDRoLTZWMmg2VjR6Ii8+PHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTc3LjUsMEw3Ny41LDBoLTZINjl2MTBoMlY2aDYuNWgwQzc4LjYsNiw3OSw1LjEsNzksNFYyQzc5LDAuOSw3OC42LDAsNzcuNSwweiBNNzcsNGgtNlYyaDZWNHoiLz48cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNjMuNSwwTDYzLjUsMGgtNkg1NXY0aC03LjVsMiwySDU1djRoMlY2aDYuNWgwQzY0LjYsNiw2NSw1LjEsNjUsNFYyQzY1LDAuOSw2NC42LDAsNjMuNSwweiBNNjMsNGgtNlYyaDZWNHoiLz48cG9seWdvbiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjQxLDAgNDEsNCAzNSw0IDM1LDAgMzMsMCAzMywxMCAzNSwxMCAzNSw2IDQxLDYgNDEsMTAgNDMsMTAgNDMsMCIvPjxyZWN0IHg9IjY2IiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMiIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTMsOCAxMywwIDExLDAgMTEsMTAgMTMuNSwxMCAyMSwxMCAyMSw4Ii8+PHBvbHlnb24gZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSI5MCwyIDkwLDAgODIuNSwwIDgwLDAgODAsMTAgODIuNSwxMCA5MCwxMCA5MCw4IDgyLDggODIsNiA4OCw2IDg4LDQgODIsNCA4MiwyIi8+PC9nPjwvZz48L2c+PC9zdmc+') left center no-repeat;
+    width:90px;
+    height:100%;
+    text-indent:-999999px;
+    cursor:pointer;
+}
+
+#header_nav {
+    float:right;
+    height:100%;
+}
+
+#header_nav a {
+    display:block;
+    float:left;
+    max-width:200px;
+    margin-top:18px;
+    margin-right:30px;
+    cursor:pointer;
+    /* Type */
+    font-size:1.2rem;
+    line-height:normal;
+    font-weight:600;
+    color:rgb(245,245,245);
+    text-shadow:1px 1px rgb(72,101,183);
+    text-transform:uppercase;
+    overflow:hidden;
+    white-space:nowrap; 
+    text-overflow:ellipsis;
+}
+html.no-touch #header_nav a:hover {
+    color:rgb(255,255,255);
+    text-shadow:1px 1px rgb(62,91,173);
+}
+
+#company_name {cursor:default;}
+html.no-touch #company_name:hover {color:rgb(245,245,245);text-shadow:1px 1px rgb(72,101,183);}
+
+#header_nav a:last-of-type {margin-right:0;}
+
+/* Touch Devices */
+html.touch #header_nav a {
+    padding:18px 0;
+    margin-top:0;
+}
+
+
+/* RESPONSIVE ADJUSTMENTS */
+
+@media only screen 
+and (max-width : 475px) {#company_name {max-width:150px;}}
+
+@media only screen 
+and (max-width : 415px) {
+    #header_wrapper {padding:0 20px;}
+    #company_name {max-width:100px;}
+}

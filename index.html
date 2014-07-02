@@ -10,19 +10,23 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <!-- CSS -->
-        <link type="text/css" rel="stylesheet" href="/assets/css/lib/reset.min.css">
-        <link type="text/css" rel="stylesheet" href="/assets/css/app/main_v2.css">
-        <link type="text/css" rel="stylesheet" href="/assets/css/app/typography_v2.css">
-        <link type="text/css" rel="stylesheet" href="/assets/css/app/tooltips_v2.css">
-        <link type="text/css" rel="stylesheet" href="/assets/css/app/tables_v2.css">
-        <link type="text/css" rel="stylesheet" href="/assets/css/app/header_v2.css">
-        <link type="text/css" rel="stylesheet" href="/assets/css/app/dashboard_v2.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/v2/lib/reset.min.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/main.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/typography.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/sections.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/articles.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/tooltips.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/tables.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/header.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/dashboard.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/question_types/generic_inputs.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/question_types/selects.css">
         <!-- Typekit -->
         <script type="text/javascript" src="//use.typekit.net/psz5hso.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
         <!-- JS -->
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script src="/assets/js/lib/modernizr.js"></script>    
+        <script src="/assets/js/v2/lib/modernizr.js"></script>    
     </head>
     <body>
         
@@ -38,9 +42,9 @@
         </section>
         
         <!-- Dashboard -->
-        <section id="dashboard">
-            <div id="dashboard_wrapper">
-                <article>
+        <section id="dashboard" class="section">
+            <div class="section_wrapper">
+                <article class="article">
                     <div class="content_block padding_40 clearfix">                    
                         <header>
                             <hgroup>
@@ -48,13 +52,16 @@
                                 <h3>View questionnaire specific metrics by using the selection tool or click the numbers to reveal detailed information.</h3>
                             </hgroup>
                             <aside>
-                                <span class="dashboard_select">All Questionnaires</span>
+                                <div class="question_wrapper type_select">
+                                    <div class="select">All Questionnaires</span>                    
+                                </div>
                             </aside>
                         </header>
                     </div>
                     <div class="content_block clearfix">
                         <ul id="big_numbers">
-                            <li class="big_number_active">
+                            <!-- <li class="big_number_active"> -->
+                            <li>
                                 <div class="big_number green">22</div>
                                 <div class="big_number_text">Requests in Progress</div>
                             </li>
@@ -78,8 +85,10 @@
                             </li>
                         </ul>
                     </div>
+                    
+                    <!-- Requests Example -->
                     <!--
-<div class="content_block padding_40">
+                    <div class="content_block padding_40">
                         <table class="responsive_table">
                             <thead>
                                 <tr>
@@ -214,12 +223,13 @@
                             </tbody>
                         </table>
                     </div>
--->
+                    -->
+                   
                     
                     <!-- SEARCH -->
+                    <!--
                     <div class="content_block padding_40">
                         <div class="question_wrapper type_search">
-                            <label>Find a Questionnaire</label>
                             <div class="input_with_btn search_btn">
                                 <input type="search" placeholder="Manager / Questionnaire">
                                 <button class="btn_new btn_new_blue">Search</button>
@@ -312,17 +322,18 @@
                             </tbody>
                         </table>
                     </div>
+                    -->
                    
                     
                 </article>
                 
                 
-                <div class="cols_wrapper clearfix">
-                    <div class="cols col_2 col_left">
-                        <article>
+                <div class="section_grid_wrapper clearfix">
+                    <div class="section_grid section_grid_2">
+                        <article class="article">
                             <div class="content_block padding_40 clearfix">                    
                                 <header>
-                                    <hgroup>
+                                    <hgroup class="width_100">
                                         <h2>Cross Questionnaire Comparison</h2>
                                         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar non libero ac iaculis.</h3>
                                     </hgroup>
@@ -392,11 +403,11 @@
                             </div>
                         </article>
                     </div>
-                    <div class="cols col_2 col_right">
-                        <article>
+                    <div class="section_grid section_grid_2">
+                        <article class="article">
                             <div class="content_block padding_40 clearfix">                    
                                 <header>
-                                    <hgroup>
+                                    <hgroup class="width_100">
                                         <h2>Questionnaire Templates</h2>
                                         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar non libero ac iaculis.</h3>
                                     </hgroup>
@@ -468,7 +479,7 @@
                     </div>
                 </div>
                 
-                <article>
+                <article class="article">
                     <div class="content_block padding_40 clearfix">                    
                         <header>
                             <hgroup>
