@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+
+/* Loader Block */
+
+#loader_postback {
+    height:0;
+    width:100%;
+    opacity:1;
+    -webkit-transition:opacity 0.2s ease-in-out;
+    	    transition:opacity 0.2s ease-in-out;
+}
+
+#loader_postback.loader_postback_active {opacity:1;}
+
+#loader_postback::before {
+    z-index:101;
+    position:absolute;
+    top:0; bottom:0; left:0; right:0;
+    background:-webkit-radial-gradient(center, ellipse cover, rgba(82,111,193,1) 0%,rgba(82,111,193,1) 40%,rgba(82,111,193,0.02) 99%,rgba(82,111,193,0) 100%);
+    background:-ms-radial-gradient(    center, ellipse cover, rgba(82,111,193,1) 0%,rgba(82,111,193,1) 40%,rgba(82,111,193,0.02) 99%,rgba(82,111,193,0) 100%);
+    background:radial-gradient(        ellipse at center,     rgba(82,111,193,1) 0%,rgba(82,111,193,1) 40%,rgba(82,111,193,0.02) 99%,rgba(82,111,193,0) 100%);
+    width:100%;
+    max-width:34px;
+    height:34px;
+    border-radius:50%;
+    margin:auto;
+    content:'';
+}
+
+#loader_postback::after {
+    z-index:102;
+    position:absolute;
+    top:0; bottom:0; left:0; right:0;
+    background:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjQgNCA0MCA0MCI+PGcgaWQ9IkxheWVyXzEiPjwvZz48ZyBpZD0iTGF5ZXJfMiI+PGc+PHBhdGggb3BhY2l0eT0iMC4zIiBmaWxsPSIjRkZGRkZGIiBkPSJNNDQsMjRjMC0xMS05LTIwLTIwLTIwQzEzLDQsNCwxMyw0LDI0YzAsMTEsOSwyMCwyMCwyMEMzNSw0NCw0NCwzNSw0NCwyNHogTTgsMjRjMC04LjgsNy4yLTE2LDE2LTE2czE2LDcuMiwxNiwxNnMtNy4yLDE2LTE2LDE2UzgsMzIuOCw4LDI0eiIvPjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik00NCwyNGMwLTExLTktMjAtMjAtMjB2NGM4LjgsMCwxNiw3LjIsMTYsMTZINDR6Ii8+PC9nPjwvZz48L3N2Zz4=') center center no-repeat;
+    background-size:contain;
+    height:18px;
+    width:18px;
+    margin:auto;
+    content:'';
+}
+
+#loader_postback::after {
+    -webkit-animation:loader_postback_spinning linear 0.5s infinite;
+            animation:loader_postback_spinning linear 0.5s infinite;
+}
+
+@-webkit-keyframes loader_postback_spinning {
+    from {-webkit-transform:rotate(0deg);}
+    to   {-webkit-transform:rotate(360deg);}
+}
+
+@keyframes loader_postback_spinning {
+    from {transform:rotate(0deg);}
+    to   {transform:rotate(360deg);}
+}
+
+
+/* RESPONSIVE ADJUSTMENTS */
+
+@media only screen 
+and (max-width : 415px) {#loader_postback::after {width:16px; height:16px;}}
