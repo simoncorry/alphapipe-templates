@@ -21,9 +21,10 @@
         <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/structure/articles.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/structure/tables.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/header/header.css">
-        <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/dashboard/dashboard.css">
-        <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/questions/inputs.css">
-        <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/questions/selects.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/dashboard/big_numbers.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/forms/inputs.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/forms/buttons.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/forms/selects.css">
         <!-- Typekit -->
         <script type="text/javascript" src="//use.typekit.net/psz5hso.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -34,7 +35,7 @@
     <body>
         
         <!-- Loader Page -->
-        <div id="loader_page" class="loader_page_active">
+        <div id="loader_page">
             <p class="loader_message">Hello World I'm Loading Hello World I'm Loading Hello World I'm Loading</p>
         </div>
         
@@ -56,15 +57,16 @@
                 <article class="article">
                     <div class="content_block padding_40 clearfix">                    
                         <header>
-                            <hgroup>
+                            <div class="block_header_lcol">
                                 <h2>Snapshot</h2>
                                 <h3>View questionnaire specific metrics by using the selection tool or click the numbers to reveal detailed information.</h3>
-                            </hgroup>
-                            <aside>
+                            </div>
+                            <div class="block_header_rcol">
                                 <div class="question_wrapper type_select">
-                                    <div class="select">All Questionnaires</span>                    
+                                    <!-- <label class="label_small">Displaying Results For:</label> -->
+                                    <div class="select">All Questionnaires</div>                 
                                 </div>
-                            </aside>
+                            </div>
                         </header>
                     </div>
                     <div class="content_block clearfix">
@@ -137,7 +139,7 @@
                                 <tr>
                                     <td class="clearfix">
                                         <span class="responsive_title">Manager</span>
-                                        <span class="responsive_text">Group Name <span class="table_slash">/</span> <a class="table_link">Expand</a></span>
+                                        <span class="responsive_text">Group Name <span class="table_slash">/</span> <a>Expand</a></span>
                                     </td>
                                     <td class="clearfix">
                                         <span class="responsive_title">Questionnaire</span>
@@ -161,7 +163,7 @@
                                 <tr>
                                     <td class="clearfix">
                                         <span class="responsive_title">Manager</span>
-                                        <span class="responsive_text">Group Name <span class="table_slash">/</span> <a class="table_link">Expand</a></span>
+                                        <span class="responsive_text">Group Name <span class="table_slash">/</span> <a>Expand</a></span>
                                     </td>
                                     <td class="clearfix">
                                         <span class="responsive_title">Questionnaire</span>
@@ -233,7 +235,23 @@
                             </tbody>
                         </table>
                     </div>
+                    <div class="content_block padding_40 clearfix">
+                        <footer>
+                            <div class="block_footer_lcol clearfix">
+                                <a class="button blue float_left">Send Request</a>
+                                <a class="button float_left">Show All</a>
+                            </div>
+                            <div class="block_footer_rcol clearfix">
+                                <ul class="table_key clearfix">
+                                    <li class="key_green">In Progress</li>
+                                    <li class="key_gray">Not Started</li>
+                                    <li class="key_red">Overdue</li>
+                                </ul>
+                            </div>
+                        </footer>
+                    </div>
                     -->
+                    
                    
                     
                     <!-- SEARCH -->
@@ -242,15 +260,15 @@
                         <div class="question_wrapper type_search">
                             <div class="input_with_btn search_btn">
                                 <input type="search" placeholder="Manager / Questionnaire">
-                                <button class="btn_new btn_new_blue">Search</button>
+                                <button class="button blue">Search</button>
                             </div>                    
                         </div>
                     </div>
                     <div class="content_block padding_40">
                         <header class="padding_bottom_25 clearfix">
-                            <hgroup>
+                            <div class="block_header_lcol">
                                 <h2>Results <span class="header_slash">/</span> <span class="header_fade">Requests</span></h2>
-                            </hgroup>
+                            </div>
                         </header>              
                         <table class="responsive_table">
                             <thead>
@@ -292,9 +310,9 @@
                     </div>
                     <div class="content_block padding_40">
                         <header class="padding_bottom_25 clearfix">
-                            <hgroup>
+                            <div class="block_header_lcol">
                                 <h2>Results <span class="header_slash">/</span> <span class="header_fade">Responses</span></h2>
-                            </hgroup>
+                            </div>
                         </header>              
                         <table class="responsive_table">
                             <thead>
@@ -322,10 +340,10 @@
                                     <td class="clearfix">
                                         <span class="responsive_title">Views</span>
                                         <span class="responsive_text">
-                                            <a class="table_link">PDF</a> <span class="table_slash">/</span> 
-                                            <a class="table_link">CSV</a> <span class="table_slash">/</span> 
-                                            <a class="table_link">Preview</a> <span class="table_slash">/</span> 
-                                            <a class="table_link">Docs</a> 
+                                            <a>PDF</a> <span class="table_slash">/</span> 
+                                            <a>CSV</a> <span class="table_slash">/</span> 
+                                            <a>Preview</a> <span class="table_slash">/</span> 
+                                            <a>Docs</a> 
                                         </span>
                                     </td>
                                 </tr>
@@ -343,10 +361,10 @@
                         <article class="article">
                             <div class="content_block padding_40 clearfix">                    
                                 <header>
-                                    <hgroup class="width_100">
+                                    <div class="block_header_lcol width_100">
                                         <h2>Cross Questionnaire Comparison</h2>
                                         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar non libero ac iaculis.</h3>
-                                    </hgroup>
+                                    </div>
                                 </header>
                             </div>
                             <div class="content_block padding_40 clearfix">
@@ -365,7 +383,7 @@
                                             </td>
                                             <td class="clearfix">
                                                 <span class="responsive_title">Views</span>
-                                                <span class="responsive_text"><a class="table_link">CSV</a></span>
+                                                <span class="responsive_text"><a>CSV</a></span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -375,7 +393,7 @@
                                             </td>
                                             <td class="clearfix">
                                                 <span class="responsive_title">Views</span>
-                                                <span class="responsive_text"><a class="table_link">CSV</a></span>
+                                                <span class="responsive_text"><a>CSV</a></span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -385,7 +403,7 @@
                                             </td>
                                             <td class="clearfix">
                                                 <span class="responsive_title">Views</span>
-                                                <span class="responsive_text"><a class="table_link">CSV</a></span>
+                                                <span class="responsive_text"><a>CSV</a></span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -395,7 +413,7 @@
                                             </td>
                                             <td class="clearfix">
                                                 <span class="responsive_title">Views</span>
-                                                <span class="responsive_text"><a class="table_link">CSV</a></span>
+                                                <span class="responsive_text"><a>CSV</a></span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -405,11 +423,18 @@
                                             </td>
                                             <td class="clearfix">
                                                 <span class="responsive_title">Views</span>
-                                                <span class="responsive_text"><a class="table_link">CSV</a></span>
+                                                <span class="responsive_text"><a>CSV</a></span>
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
+                            </div>
+                            <div class="content_block padding_40 clearfix">
+                                <footer>
+                                    <div class="block_footer_lcol clearfix">
+                                        <a class="button float_left">Show All</a>
+                                    </div>
+                                </footer>
                             </div>
                         </article>
                     </div>
@@ -417,10 +442,10 @@
                         <article class="article">
                             <div class="content_block padding_40 clearfix">                    
                                 <header>
-                                    <hgroup class="width_100">
+                                    <div class="block_header_lcol width_100">
                                         <h2>Questionnaire Templates</h2>
                                         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar non libero ac iaculis.</h3>
-                                    </hgroup>
+                                    </div>
                                 </header>
                             </div>
                             <div class="content_block padding_40 clearfix">
@@ -439,7 +464,7 @@
                                             </td>
                                             <td class="clearfix">
                                                 <span class="responsive_title">Views</span>
-                                                <span class="responsive_text"><a class="table_link">Preview</a></span>
+                                                <span class="responsive_text"><a>Preview</a></span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -449,7 +474,7 @@
                                             </td>
                                             <td class="clearfix">
                                                 <span class="responsive_title">Views</span>
-                                                <span class="responsive_text"><a class="table_link">Preview</a></span>
+                                                <span class="responsive_text"><a>Preview</a></span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -459,7 +484,7 @@
                                             </td>
                                             <td class="clearfix">
                                                 <span class="responsive_title">Views</span>
-                                                <span class="responsive_text"><a class="table_link">Preview</a></span>
+                                                <span class="responsive_text"><a>Preview</a></span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -469,7 +494,7 @@
                                             </td>
                                             <td class="clearfix">
                                                 <span class="responsive_title">Views</span>
-                                                <span class="responsive_text"><a class="table_link">Preview</a></span>
+                                                <span class="responsive_text"><a>Preview</a></span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -479,11 +504,23 @@
                                             </td>
                                             <td class="clearfix">
                                                 <span class="responsive_title">Views</span>
-                                                <span class="responsive_text"><a class="table_link">Preview</a></span>
+                                                <span class="responsive_text"><a>Preview</a></span>
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
+                            </div>
+                            <div class="content_block padding_40 clearfix">
+                                <footer>
+                                    <div class="block_footer_lcol width_38 clearfix">
+                                        <a class="button float_left">Show All</a>
+                                    </div>
+                                    <div class="block_footer_rcol width_62 clearfix">
+                                        <div class="table_filter clearfix">
+                                            <p>Filter by: &nbsp; <a href="#">Published</a> <span class="table_slash">/</span> <a href="#">Unpublished</a></p>
+                                        </div>
+                                    </div>
+                                </footer>
                             </div>
                         </article>
                     </div>
@@ -492,11 +529,117 @@
                 <article class="article">
                     <div class="content_block padding_40 clearfix">                    
                         <header>
-                            <hgroup>
-                                <h2>Test</h2>
+                            <div class="block_header_lcol">
+                                <h2>Manager Connections</h2>
                                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar non libero ac iaculis.</h3>
-                            </hgroup>
+                            </div>
                         </header>
+                    </div>
+                    <div class="content_block padding_40 clearfix">
+                        <table class="responsive_table">
+                            <thead>
+                                <tr>
+                                    <th>Manager</th>
+                                    <th>Added</th>
+                                    <th class="status_head">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="clearfix">
+                                        <span class="responsive_title">Manager</span>
+                                        <span class="responsive_text">Really Really Long Manager Name</span>
+                                    </td>
+                                    <td class="clearfix">
+                                        <span class="responsive_title">Added</span>
+                                        <span class="responsive_text">DD-MMM-YYYY</span>
+                                    </td>
+                                    <td class="clearfix status_cell">
+                                        <span class="responsive_title">Status</span>
+                                        <span class="responsive_text">
+                                            <span class="status_dot status_green"></span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="clearfix">
+                                        <span class="responsive_title">Manager</span>
+                                        <span class="responsive_text">Manager Name</span>
+                                    </td>
+                                    <td class="clearfix">
+                                        <span class="responsive_title">Added</span>
+                                        <span class="responsive_text">DD-MMM-YYYY</span>
+                                    </td>
+                                    <td class="clearfix status_cell">
+                                        <span class="responsive_title">Status</span>
+                                        <span class="responsive_text">
+                                            <span class="status_dot status_green"></span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="clearfix">
+                                        <span class="responsive_title">Manager</span>
+                                        <span class="responsive_text">Really Really Long Manager Name</span>
+                                    </td>
+                                    <td class="clearfix">
+                                        <span class="responsive_title">Added</span>
+                                        <span class="responsive_text">DD-MMM-YYYY</span>
+                                    </td>
+                                    <td class="clearfix status_cell">
+                                        <span class="responsive_title">Status</span>
+                                        <span class="responsive_text">
+                                            <span class="status_dot status_green"></span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="clearfix">
+                                        <span class="responsive_title">Manager</span>
+                                        <span class="responsive_text">Manager Name</span>
+                                    </td>
+                                    <td class="clearfix">
+                                        <span class="responsive_title">Added</span>
+                                        <span class="responsive_text">DD-MMM-YYYY</span>
+                                    </td>
+                                    <td class="clearfix status_cell">
+                                        <span class="responsive_title">Status</span>
+                                        <span class="responsive_text">
+                                            <span class="status_dot status_green"></span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="clearfix">
+                                        <span class="responsive_title">Manager</span>
+                                        <span class="responsive_text">Manager Name</span>
+                                    </td>
+                                    <td class="clearfix">
+                                        <span class="responsive_title">Added</span>
+                                        <span class="responsive_text">DD-MMM-YYYY</span>
+                                    </td>
+                                    <td class="clearfix status_cell">
+                                        <span class="responsive_title">Status</span>
+                                        <span class="responsive_text">
+                                            <span class="status_dot status_gray"></span>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="content_block padding_40 clearfix">
+                        <footer>
+                            <div class="block_footer_lcol clearfix">
+                                <a class="button float_left">Show All</a>
+                            </div>
+                            <div class="block_footer_rcol clearfix">
+                                <ul class="table_key clearfix">
+                                    <li class="key_green">Active Connection</li>
+                                    <li class="key_gray">Inactive Connection</li>
+                                </ul>
+                            </div>
+                        </footer>
                     </div>
                 </article>        
             </div>

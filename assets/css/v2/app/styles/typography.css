@@ -3,7 +3,7 @@
 /* See http://bit.ly/1eMgki5 for advice regarding REM units */
 
 html {font-size:62.5%  !important;}
-body {font-size:1.8rem !important;}
+body {font-size:1.5rem !important;}
 
 body {
     font-family:"proxima-nova",sans-serif;
@@ -23,5 +23,9 @@ body {
 a {
     -webkit-transition:color 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
             transition:color 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
+    /* Text */
+    font-weight:600;
+    color:rgb(107,148,191);
     text-decoration:none;
 }
+a:hover {color:rgb(113,182,244);}
