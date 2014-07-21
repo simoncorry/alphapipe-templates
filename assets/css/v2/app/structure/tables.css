@@ -142,6 +142,7 @@ and (max-width : 959px) {
     .responsive_table tr {display:block; padding:0;}
     .responsive_table thead tr {display:none;}
     .responsive_table tr {border-top:1px solid rgb(223,226,229);}
+    html.no-touch .responsive_table tr:hover {border-left:none; border-right:none; border-top:1px solid rgb(223,226,229);}
     .responsive_table td {background-color:rgb(235,239,246); border:none; border-bottom:1px solid rgb(223,226,229);}
     .responsive_table td:last-of-type {border-bottom-width:9px;}
     .responsive_table tr:last-of-type td:last-of-type {border-bottom-width:1px;}
