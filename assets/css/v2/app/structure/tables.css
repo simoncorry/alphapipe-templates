@@ -13,8 +13,21 @@
     line-height:2.2rem;
 }
 
-.responsive_table tr {background-color:rgb(253,254,255);}
+.responsive_table tr {
+    background-color:rgb(253,254,255);
+    -webkit-transition:background-color 0.3s ease-in-out;
+    	    transition:background-color 0.3s ease-in-out;
+}
 .responsive_table tr:nth-of-type(odd) {background-color:rgb(250,251,252);}
+html.no-touch .responsive_table tr:hover {
+    background-color:rgb(245,246,248);
+    border:1px solid rgb(203,206,209);
+    border-top:none;
+    border-bottom:none;
+    -webkit-transition:none;
+    	    transition:none;
+}
+html.no-touch .responsive_table thead tr:hover {border:none;}
 
 .responsive_table th,
 .responsive_title { 
