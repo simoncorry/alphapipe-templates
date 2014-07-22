@@ -15,8 +15,10 @@
 
 .responsive_table tr {
     background-color:rgb(253,254,255);
-    -webkit-transition:background-color 0.3s ease-in-out;
-    	    transition:background-color 0.3s ease-in-out;
+    -webkit-transition:background-color 0.3s ease-in-out,
+                       color            0.3s ease-in-out;
+    	    transition:background-color 0.3s ease-in-out,
+    	               color            0.3s ease-in-out;
 }
 .responsive_table tr:nth-of-type(odd) {background-color:rgb(250,251,252);}
 html.no-touch .responsive_table tr:hover {
@@ -26,7 +28,11 @@ html.no-touch .responsive_table tr:hover {
     border-bottom:none;
     -webkit-transition:none;
     	    transition:none;
+    /* Text */
+    color:rgb(70,71,68) !important;
 }
+html.no-touch .responsive_table tr:hover a {color:rgb(77,118,161);}
+html.no-touch .responsive_table tr:hover a:hover {color:rgb(113,182,244);}
 html.no-touch .responsive_table thead tr:hover {border:none;}
 
 .responsive_table th,
