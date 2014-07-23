@@ -26,6 +26,7 @@
         <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/structure/tables.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/header/header.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/navigation/navigation.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/messages/notifications.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/dashboard/big_numbers.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/forms/inputs.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/v2/app/forms/buttons.css">
@@ -55,6 +56,7 @@
     </head>
     <body>
         
+        
         <!-- Loader Page -->
         <div id="loader_page">
             <p class="loader_message">Hello World I'm Loading Hello World I'm Loading Hello World I'm Loading</p>
@@ -66,7 +68,7 @@
             <div id="header_wrapper" class="clearfix">
                 <a id="header_logo" href="home.html">AlphaPipe</a>
                 <nav id="header_nav" class="clearfix">
-                    <a id="company_name">Company Name Company Name Company Name</a>
+                    <a id="company_name">Company Name</a>
                     <a id="btn_menu">Menu</a>
                 </nav>
             </div>
@@ -76,6 +78,22 @@
         
         <!-- Pusher - To push whole site down or left for alerts and navigation -->
         <div id="pusher_wrapper">
+            
+            
+            <!-- Pusher - Topside -->
+            <div id="pusher_topside">
+                
+                <!-- Notifications -->
+                <section id="notifications" class="green">
+                    <div id="notifications_wrapper" class="clearfix">
+                        <div id="notification">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a id="btn_close_notification">Close Notification</a>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
             
             
             <!-- Pusher - Rightside -->
@@ -162,7 +180,6 @@
             <!-- Pusher - Site -->
             <div id="pusher_site">
             
-                
                 
                 <!-- Dashboard -->
                 <section id="dashboard" class="section">

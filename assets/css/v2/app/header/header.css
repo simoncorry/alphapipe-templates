@@ -16,7 +16,7 @@
 
 #header_wrapper {
     width:100%;
-    max-width:1200px;
+    max-width:1300px;
     height:100%;
     margin:0 auto;
     padding:0 40px;
@@ -30,6 +30,12 @@
     height:100%;
     text-indent:-999999px;
     cursor:pointer;
+    -webkit-transition:-webkit-transform 0.2s ease-in-out;
+    	    transition:        transform 0.2s ease-in-out;
+}
+html.no-touch #header_logo:hover {
+    -webkit-transform:scale3d(1.05,1.05,1);
+    	    transform:scale3d(1.05,1.05,1);
 }
 
 #header_nav {
@@ -48,22 +54,16 @@
     font-size:1.2rem;
     line-height:normal;
     font-weight:600;
-    color:rgb(245,245,245);
+    color:rgb(255,255,255);
     text-shadow:1px 1px rgb(72,101,183);
     text-transform:uppercase;
     overflow:hidden;
     white-space:nowrap; 
     text-overflow:ellipsis;
 }
-html.no-touch #header_nav a:hover {
-    color:rgb(255,255,255);
-    text-shadow:1px 1px rgb(62,91,173);
-}
+#header_nav a:last-of-type {margin-right:0;}
 
 #company_name {cursor:default;}
-html.no-touch #company_name:hover {color:rgb(245,245,245);text-shadow:1px 1px rgb(72,101,183);}
-
-#header_nav a:last-of-type {margin-right:0;}
 
 /* Touch Devices */
 html.touch #header_nav a {
