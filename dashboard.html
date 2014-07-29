@@ -45,7 +45,7 @@
             $(function() {
               
               $('#btn_menu').on('click', function() {
-                  $('body').toggleClass('pusher_active rightside');
+                  $('body').toggleClass('pusher_active topside');
               });
                             
             });
@@ -54,7 +54,7 @@
         
            
     </head>
-    <body>
+    <body class="">
         
         
         <!-- Loader Page -->
@@ -101,76 +101,26 @@
                 
                 <!-- Navigation -->
                 <section id="navigation">
-                    <ul>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                    </ul>
+                    <div class="btn_wrapper_nav clearfix">
+                        <a id="btn_close_nav">Close</a>
+                    </div>
+                    <nav>
+                        <ul id="navigation_main">
+                            <li class="dashboard"><a href="#" class="active_link">Dashboard</a></li>
+                            <li class="requests"><a href="#">Requests</a></li>
+                            <li class="responses"><a href="#">Responses</a></li>
+                            <li class="connections"><a href="#">Connections</a></li>
+                            <li class="questionnaires"><a href="#">Questionnaires</a></li>
+                        </ul>
+                        <ul id="navigation_secondary">
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </nav>
+                    <div class="btn_wrapper_nav padding_20_40">
+                        <a class="button navigation">Request Questionnaire</a>
+                    </div>
                 </section>
                 
             </div>
@@ -193,7 +143,7 @@
                                     </div>
                                     <div class="block_header_rcol">
                                         <div class="question_wrapper type_select">
-                                            <!-- <label class="label_small">Displaying Results For:</label> -->
+                                            <label class="label_small">Displaying data results for:</label>
                                             <div class="select">All Questionnaires</div>                 
                                         </div>
                                     </div>
@@ -201,19 +151,18 @@
                             </div>
                             <div class="content_block clearfix">
                                 <ul id="big_numbers">
-                                    <!-- <li class="big_number_active"> -->
                                     <li>
                                         <div class="big_number green">22</div>
                                         <div class="big_number_text">Requests in Progress</div>
-                                        <div class="loader_block"></div>
                                     </li>
                                     <li>
                                         <div class="big_number gray">16</div>
                                         <div class="big_number_text">Requests Not Started</div>
                                     </li>
-                                    <li>
+                                    <li class="big_number_active">
                                         <div class="big_number red">4</div>
                                         <div class="big_number_text">Requests Overdue</div>
+                                        <!-- <div class="loader_block"></div> -->
                                     </li>
                                     <li>
                                         <div class="big_number black">37</div>
@@ -228,8 +177,7 @@
                                 </ul>
                             </div>
                             
-                            <!-- Requests Example -->
-                            <!--
+                            <!-- Requests Overdue Example -->
                             <div class="content_block padding_40">
                                 <table class="responsive_table">
                                     <thead>
@@ -262,7 +210,7 @@
                                             <td class="clearfix status_cell">
                                                 <span class="responsive_title">Status</span>
                                                 <span class="responsive_text">
-                                                    <span class="status_dot status_green"></span>
+                                                    <span class="status_dot status_red"></span>
                                                 </span>
                                             </td>
                                         </tr>
@@ -286,7 +234,7 @@
                                             <td class="clearfix status_cell">
                                                 <span class="responsive_title">Status</span>
                                                 <span class="responsive_text">
-                                                    <span class="status_dot status_green"></span>
+                                                    <span class="status_dot status_red"></span>
                                                 </span>
                                             </td>
                                         </tr>
@@ -310,7 +258,7 @@
                                             <td class="clearfix status_cell">
                                                 <span class="responsive_title">Status</span>
                                                 <span class="responsive_text">
-                                                    <span class="status_dot status_green"></span>
+                                                    <span class="status_dot status_red"></span>
                                                 </span>
                                             </td>
                                         </tr>
@@ -334,31 +282,7 @@
                                             <td class="clearfix status_cell">
                                                 <span class="responsive_title">Status</span>
                                                 <span class="responsive_text">
-                                                    <span class="status_dot status_green"></span>
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="clearfix">
-                                                <span class="responsive_title">Manager</span>
-                                                <span class="responsive_text">Manager Name</span>
-                                            </td>
-                                            <td class="clearfix">
-                                                <span class="responsive_title">Questionnaire</span>
-                                                <span class="responsive_text">Questionnaire Name</span>
-                                            </td>
-                                            <td class="clearfix">
-                                                <span class="responsive_title">Sent</span>
-                                                <span class="responsive_text date_text">DD-MMM-YYYY</span>
-                                            </td>
-                                            <td class="clearfix">
-                                                <span class="responsive_title">Due</span>
-                                                <span class="responsive_text date_text">DD-MMM-YYYY</span>
-                                            </td>
-                                            <td class="clearfix status_cell">
-                                                <span class="responsive_title">Status</span>
-                                                <span class="responsive_text">
-                                                    <span class="status_dot status_green"></span>
+                                                    <span class="status_dot status_red"></span>
                                                 </span>
                                             </td>
                                         </tr>
@@ -369,7 +293,7 @@
                                 <footer>
                                     <div class="block_footer_lcol clearfix">
                                         <a class="button blue float_left">Send Request</a>
-                                        <a class="button float_left">Show All</a>
+                                        <a class="button float_left">Show All Requests</a>
                                     </div>
                                     <div class="block_footer_rcol clearfix">
                                         <ul class="table_key clearfix">
@@ -380,7 +304,7 @@
                                     </div>
                                 </footer>
                             </div>
-                            -->
+                           
                             
                            
                             

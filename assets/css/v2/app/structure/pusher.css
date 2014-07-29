@@ -34,14 +34,14 @@
 #pusher_rightside {
     z-index:999999;
     position:fixed;
-    top:0; right:-300px;
+    top:0; right:-340px;
     background-color:rgb(174,175,176);
-    width:300px;
+    width:340px;
     height:100%;
 }
 #pusher_rightside::after {
     position:fixed;
-    top:0; right:300px;
+    top:0; right:340px;
     opacity:0;
     background-color:rgba(234,236,238,0.7);
     width:8000px;
@@ -84,16 +84,41 @@ html.no-csstransforms3d .pusher_active.topside #header {
 .pusher_active.rightside #pusher_rightside,
 .pusher_active.rightside #pusher_site,
 .pusher_active.rightside #header {
-    -webkit-transform:translate3d(-300px,0,0);
-    	    transform:translate3d(-300px,0,0);
+    -webkit-transform:translate3d(-340px,0,0);
+    	    transform:translate3d(-340px,0,0);
 }
 html.no-csstransforms3d .pusher_active.rightside #pusher_rightside,
 html.no-csstransforms3d .pusher_active.rightside #pusher_site,
 html.no-csstransforms3d .pusher_active.rightside #header {
-    -webkit-transform:translate(-300px,0);
-        -ms-transform:translate(-300px,0);
-    	    transform:translate(-300px,0);
+    -webkit-transform:translate(-340px,0);
+        -ms-transform:translate(-340px,0);
+    	    transform:translate(-340px,0);
 }
 .pusher_active.rightside {overflow:hidden;}
 .pusher_active.rightside #pusher_rightside::after {opacity:1;}
 
+
+/* RESPONSIVE ADJUSTMENTS */
+
+@media only screen 
+and (max-width : 415px) {
+    
+    /* Rightside */
+    #pusher_rightside {right:-300px; width:300px;}
+    #pusher_rightside::after {right:300px;}
+    /* Right Side Active */
+    .pusher_active.rightside #pusher_rightside,
+    .pusher_active.rightside #pusher_site,
+    .pusher_active.rightside #header {
+        -webkit-transform:translate3d(-300px,0,0);
+        	    transform:translate3d(-300px,0,0);
+    }
+    html.no-csstransforms3d .pusher_active.rightside #pusher_rightside,
+    html.no-csstransforms3d .pusher_active.rightside #pusher_site,
+    html.no-csstransforms3d .pusher_active.rightside #header {
+        -webkit-transform:translate(-300px,0);
+            -ms-transform:translate(-300px,0);
+        	    transform:translate(-300px,0);
+    }
+    
+}

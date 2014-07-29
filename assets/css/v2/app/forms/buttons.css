@@ -111,6 +111,25 @@ a.button.height_30 {padding-top:6px;}
     text-shadow:1px 1px 0 rgba(191,107,107,0.8);
 }
 
+/* Nav */
+
+.button.navigation {
+    background-color:rgb(72,101,183);
+    height:46px;
+    padding-top:13px;
+    border:none;
+    font-size:1.4rem;
+    color:rgb(181,192,201);
+    text-shadow:1px 1px rgba(72,101,183,1.0);
+    -webkit-transition:all 0.2s ease-in-out;
+    	    transition:all 0.2s ease-in-out;
+}
+
+.button.navigation:hover {
+    background-color:rgb(62,91,173);
+    color:rgb(250,253,252);
+}
+
 
 /* Loading */
 
