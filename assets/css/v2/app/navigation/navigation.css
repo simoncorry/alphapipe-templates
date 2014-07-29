@@ -17,9 +17,9 @@
     width:100%;
     border-bottom:1px solid rgba(62,91,173,0.4);
 }
-.btn_wrapper_nav:last-of-type {border-top:1px solid rgba(62,91,173,0.4);}
+.btn_wrapper_nav:last-of-type {border-top:1px solid rgba(62,91,173,0.4); border-bottom:none;}
 
-.btn_wrapper_nav.padding_20_40 {padding:20px 40px;}
+.btn_wrapper_nav.padding_40 {padding:40px;}
 
 
 /* Close */
