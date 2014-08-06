@@ -49,7 +49,7 @@
     content:'';
     pointer-events:none;
 }
-
+.ie9 #pusher_rightside::after {display:none;}
 
 /* ACTIVE STATES */
 
@@ -95,7 +95,7 @@ html.no-csstransforms3d .pusher_active.rightside #header {
     	    transform:translate(-340px,0);
 }
 .pusher_active.rightside {overflow:hidden;}
-.pusher_active.rightside #pusher_rightside::after {opacity:1;}
+.pusher_active.rightside #pusher_rightside::after {display:block; opacity:1;}
 
 
 /* RESPONSIVE ADJUSTMENTS */
