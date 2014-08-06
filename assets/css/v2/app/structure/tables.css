@@ -145,7 +145,7 @@ and (max-width : 959px) {
     .responsive_table tbody, 
     .responsive_table th, 
     .responsive_table td, 
-    .responsive_table tr {display:block; padding:0;}
+    .responsive_table tr {float:left; width:100%; display:block; padding:0;}
     .responsive_table thead tr {display:none;}
     .responsive_table tr {border-top:1px solid rgb(223,226,229);}
     html.no-touch .responsive_table tr:hover {border-left:none; border-right:none; border-top:1px solid rgb(223,226,229);}
@@ -157,7 +157,7 @@ and (max-width : 959px) {
     
     /* Status */
     .status_head,
-    .status_cell {width:auto !important; padding:0 !important; text-align:left !important;}
+    .status_cell {width:100% !important; padding:0 !important; text-align:left !important;}
     .status_cell > .responsive_text {min-height:42px !important;}
     .status_dot {margin:7px 0 0;}
     
